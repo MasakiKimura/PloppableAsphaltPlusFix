@@ -1,0 +1,44 @@
+Mod あり : 2:06
+CallCount 95310
+
+ApplyColorsあり 51.3636508 sec
+ApplyColors無し 0.0487657 sec
+修正版 0.07281 sec
+
+void ApplyProperties()
+{
+	for (uint i = 0; i < PrefabCollection<PropInfo>.LoadedCount(); i++)
+	{
+		ApplyColors()
+		{
+			for (uint i = 0; i < PrefabCollection<PropInfo>.LoadedCount(); i++)
+			{
+
+			}
+			
+			SetRenderPropertiesAll()
+			{
+				for (uint i = 0; i < PrefabCollection<PropInfo>.LoadedCount(); i++)
+				{
+				
+				}
+				
+				for (uint i = 0; i < PrefabCollection<BuildingInfo>.LoadedCount(); i++)
+				{
+				
+				}
+			}			
+			
+		}
+	}
+}
+
+PropInfo ploppableasphalt-prop
+//get ACI textures, to be used as APR textures 
+//change the shader
+//add the ACI textures as APR textures
+//set high render distance
+//change size
+//ApplyColors()
+//SetRenderProperties()
+
