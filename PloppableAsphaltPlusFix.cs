@@ -358,6 +358,10 @@ namespace PloppableAsphaltFix
                     if (prefab.m_generatedInfo.m_size.y < 16) prefab.m_generatedInfo.m_size.y = 16f;
                     prefab.m_generatedInfo.m_size.x = prefab.m_generatedInfo.m_size.x * 0.4f;
                     prefab.m_generatedInfo.m_size.z = prefab.m_generatedInfo.m_size.z * 0.4f;
+
+                    //change the color variation for the props
+                    prefab.m_color0 = color; prefab.m_color1 = color;
+                    prefab.m_color2 = color; prefab.m_color3 = color;
                 }
 
                 else if (prefab.m_mesh.name == "ploppableasphalt-decal")
@@ -366,11 +370,11 @@ namespace PloppableAsphaltFix
                     prefab.m_lodMaterial.SetTexture("_MainTex", UnityEngine.Object.FindObjectOfType<NetProperties>().m_upwardDiffuse);
                     //this sets the render distance properties on this item
                     SetRenderProperties(prefab);
-                }
 
-                //change the color variation for the props
-                prefab.m_color0 = color; prefab.m_color1 = color;
-                prefab.m_color2 = color; prefab.m_color3 = color;
+                    //change the color variation for the props
+                    prefab.m_color0 = color; prefab.m_color1 = color;
+                    prefab.m_color2 = color; prefab.m_color3 = color;
+                }
             }
 
             for (uint i = 0; i < PrefabCollection<BuildingInfo>.LoadedCount(); i++)
